@@ -25,6 +25,7 @@ public class CollisionChecker {
 		int tileNum1, tileNum2;
 
 		switch (entity.direction) {
+		//CHECK UP LEFT & UP RIGHT CORNER
 		case "up":
 			entityTopRow = (entityTopWorldY - entity.speed) / gp.tileSize;
 			tileNum1 = gp.tileM.mapTileNum[entityLeftCol][entityTopRow];
@@ -33,6 +34,7 @@ public class CollisionChecker {
 				entity.collisionOn = true;
 			}
 			break;
+			//CHECK DOWN LEFT & DOWN RIGHT CORNER
 		case "down":
 			entityBottomRow = (entityBottomWorldY + entity.speed) / gp.tileSize;
 			tileNum1 = gp.tileM.mapTileNum[entityLeftCol][entityBottomRow];
@@ -41,6 +43,7 @@ public class CollisionChecker {
 				entity.collisionOn = true;
 			}
 			break;
+			//CHECK UP LEFT & DOWN LEFT CORNER
 		case "left":
 			entityLeftCol = (entityLeftWorldX - entity.speed) / gp.tileSize;
 			tileNum1 = gp.tileM.mapTileNum[entityLeftCol][entityTopRow];
@@ -49,6 +52,7 @@ public class CollisionChecker {
 				entity.collisionOn = true;
 			}
 			break;
+			//CHECK UP RIGHT & DOWN RIGHT CORNER
 		case "right":
 			entityRightCol = (entityRightWorldX + entity.speed) / gp.tileSize;
 			tileNum1 = gp.tileM.mapTileNum[entityRightCol][entityTopRow];

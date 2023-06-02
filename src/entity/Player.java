@@ -39,7 +39,7 @@ public class Player extends Entity {
 	public void setDefaultValues() {
 		// Set Player Starting position on World Map
 		worldX = gp.tileSize * 23;
-		worldY = gp.tileSize * 7;
+		worldY = gp.tileSize * 21;
 		// Set Player Speed
 		speed = 4;
 		// Set Player initial Direction

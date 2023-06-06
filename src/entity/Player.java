@@ -142,6 +142,11 @@ public class Player extends Entity {
 			case "Chest":
 
 				break;
+			case "Boots":
+				System.out.println("You gained a Speedboost!");
+				speed += 2;
+				gp.obj[i] = null;
+				break;
 			}
 		}
 	}

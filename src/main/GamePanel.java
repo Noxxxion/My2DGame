@@ -38,7 +38,7 @@ public class GamePanel extends JPanel implements Runnable {
 	public CollisionChecker cChecker = new CollisionChecker(this);
 	public AssetSetter aSetter = new AssetSetter(this);
 	public Player player = new Player(this, keyH);
-	public SuperObject obj[] = new SuperObject[10];
+	public SuperObject obj[] = new SuperObject[10]; //SET OBJECT COUNT TO 10!
 
 	public GamePanel() {
 
@@ -81,11 +81,11 @@ public class GamePanel extends JPanel implements Runnable {
 				delta--;
 				drawCount++;
 			}
-			if (timer >= 1000000000) {
-				System.out.println("FPS:" + drawCount);
-				drawCount = 0;
-				timer = 0;
-			}
+//			if (timer >= 1000000000) {
+//				System.out.println("FPS:" + drawCount);
+//				drawCount = 0;
+//				timer = 0;
+//			}
 		}
 	}
 

@@ -29,7 +29,7 @@ public class AssetSetter {
 		// FIRST DOOR
 		gp.obj[3] = new OBJ_Door(gp);
 		gp.obj[3].worldX = 12 * gp.tileSize;
-		gp.obj[3].worldY = 22 * gp.tileSize;
+		gp.obj[3].worldY = 23 * gp.tileSize;
 		// SECOND DOOR
 		gp.obj[4] = new OBJ_Door(gp);
 		gp.obj[4].worldX = 8 * gp.tileSize;
@@ -37,7 +37,7 @@ public class AssetSetter {
 		// THIRD DOOR
 		gp.obj[5] = new OBJ_Door(gp);
 		gp.obj[5].worldX = 10 * gp.tileSize;
-		gp.obj[5].worldY = 11 * gp.tileSize;
+		gp.obj[5].worldY = 12 * gp.tileSize;
 		// FINAL CHEST
 		gp.obj[6] = new OBJ_Chest(gp);
 		gp.obj[6].worldX = 10 * gp.tileSize;
